@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from config.db import conn
-from models.preparacion import preparacion as pre
-from schemas.preparacion import Preparacion
+from ..config.db import conn
+from ..models.preparacion import preparacion as pre
+from ..schemas.preparacion import Preparacion
 
 
 preparaciones = APIRouter()

@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from config.db import conn
-from models.imagenes import imagenes as img
-from schemas.imagenes import Imagenes
+from ..config.db import conn
+from ..models.imagenes import imagenes as img
+from ..schemas.imagenes import Imagenes
 
 
 imagenes = APIRouter()

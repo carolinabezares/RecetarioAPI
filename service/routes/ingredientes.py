@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from config.db import conn
-from models.ingredientes import ingredientes as ingre
-from schemas.ingredientes import Ingredientes
+from ..config.db import conn
+from ..models.ingredientes import ingredientes as ingre
+from ..schemas.ingredientes import Ingredientes
 
 
 ingredientes = APIRouter()

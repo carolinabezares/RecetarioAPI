@@ -1,13 +1,14 @@
+from tkinter import Image
 from sqlalchemy import Column, ForeignKey, Table
 from sqlalchemy.sql.sqltypes import Integer, String
-from config.db import meta, engine
+from ..config.db import meta, engine
 
-preparacion = Table(
-    "preparacion",
+imagenes = Table(
+    "imagenes",
     meta,
     Column("id", Integer, primary_key=True, autoincrement=True),
-    Column("preparacion",String(255),),
-    Column("id_receta",Integer, ForeignKey("recetas.id")),
+    Column("imagen",String(255)),
+    Column("id_tipo",Integer, ForeignKey("tipo_receta.id")),
 )
 
 meta.create_all(engine)

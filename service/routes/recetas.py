@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from config.db import conn
-from models.recetas import recetas as rc
-from schemas.recetas import Recetas
+from ..config.db import conn
+from ..models.recetas import recetas as rc
+from ..schemas.recetas import Recetas
 
 
 recetas = APIRouter()
